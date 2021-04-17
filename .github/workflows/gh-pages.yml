@@ -25,10 +25,10 @@ jobs:
         run: |
           npm install -g pnpm
           pnpm install -g harp
-          harp compile
+          harp compile src docs
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: www
+          FOLDER: docs
