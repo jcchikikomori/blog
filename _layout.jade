@@ -1,0 +1,9 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="/assets/scss/main.css")
+  body
+    != partial("_shared/nav")
+    != yield
+    footer
+      p Copyright #{public._data.year}
