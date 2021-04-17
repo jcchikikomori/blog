@@ -1,9 +1,14 @@
+if rootPath
+  base(href="#{rootPath}")
+else
+  base(href="/blog/")
+
 doctype
 html
   head
-    link(rel="stylesheet" href="/assets/scss/main.css")
+    link(rel="stylesheet" href="assets/scss/main.css")
   body
     != partial("_shared/nav")
     != yield
     footer
-      p Copyright #{public._data.year}
+      p Copyright #{year}
