@@ -1,12 +1,22 @@
-if rootPath
-  base(href="#{rootPath}")
-else
-  base(href="/blog/")
-
 doctype
 html
   head
-    link(rel="stylesheet" href="assets/scss/main.css")
+    if environment == "production" || environment == "development"
+      if environment == "production"
+        //- github pages (production) need the base url to be the
+        //- path of the project repo
+        base(href="/blog/")
+      if environment == "development"
+        //- local dev environment (development) needs the base url
+        //- to be a slash (for harp server)
+        base(href="/")
+    else
+      //- alternatively, you can use the node env variable directly
+      //- as the base url to compile for a custom url (ex. another
+      //- user's fork's gh-pages branch)
+      base(href="#{environment}")
+
+    link(rel="stylesheet" href="/assets/scss/main.css")
   body
     != partial("_shared/nav")
     != yield
