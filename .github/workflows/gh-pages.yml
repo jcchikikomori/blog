@@ -21,10 +21,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install and Build 🔧
+      - name: Install 🔧
         run: |
           npm install -g pnpm
-          pnpm install -g harp
+          pnpm install -g harp json
+      - name: Set rootPath to _harp.json 🔧
+        run: |
+          json -I -f src/_harp.json -e "this.globals.rootPath=\"/blog\""
+      - name: Build 🔧
+        run: |
           harp compile src docs
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2

@@ -1,13 +1,7 @@
 doctype
 html
   head
-    - baseUrl = "/"
-    if environment == "production" || environment == "development"
-      if environment == "production"
-        - baseUrl = "/blog"
-      if environment == "development"
-        - baseUrl = "/"
-    link(rel="stylesheet" href="#{baseUrl}/assets/scss/main.css")
+    link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
   body
     != partial("_shared/nav")
     != yield

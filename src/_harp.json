@@ -1,6 +1,6 @@
 {
   "globals": {
-    "rootPath": "$rootPath",
+    "rootPath": "",
     "year": 2021
   }
 }
