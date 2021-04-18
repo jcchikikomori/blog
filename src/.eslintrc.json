@@ -1,0 +1,15 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": false
+    },
+    "extends": [
+        "airbnb-base",
+        "jquery"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+    }
+}

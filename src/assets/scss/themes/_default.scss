@@ -26,5 +26,12 @@ html {
     .link+.link {
       margin-left: .5rem;
     }
+
+    .-paragraph {
+      margin-top: 1rem;
+      text-align: -webkit-auto;
+      white-space: pre-line;
+      word-break: normal;
+    }
   }
 }
