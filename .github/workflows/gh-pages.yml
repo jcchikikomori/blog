@@ -38,6 +38,12 @@ jobs:
         run: |
           ls -al src/node_modules
           node-sass --omit-source-map-url src/assets/scss/main.scss docs/assets/scss/main.css
+          ls -al docs/assets
+      - name: Compile JS manually
+        run: |
+          mkdir -p docs/assets/js
+          cp src/assets/js/main.js docs/assets/js/main.js
+          ls -al docs/assets
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
