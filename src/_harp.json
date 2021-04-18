@@ -1,6 +1,8 @@
 {
   "globals": {
     "rootPath": "",
-    "year": 2021
+    "version": "0.1.0",
+    "year": 2021,
+    "buildDate": ""
   }
 }

@@ -1,10 +1,37 @@
-doctype
-html
+doctype html
+html(lang='en')
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    title JCC Blog
+    meta(name='description' content='Software Developer')
+    meta(name='keywords' content='blog, web, mobile-friendly, static-page, html5, github-pages')
+    meta(name='author' content='John Cyrill Corsanes')
+    meta(property='og:title' content='JCC Blog')
+    meta(property='og:image' content='img/jcc_logo_og.jpg')
+    meta(property='og:url' content='https://jcchikikomori.github.io/blog')
+    meta(property='og:site_name' content='JCC Blog')
+    meta(property='og:description' content='JCC Blog Site')
+    meta(name='twitter:title' content="JCC's Blog")
+    meta(name='twitter:image' content='img/jcc_logo_og.jpg')
+    meta(name='twitter:url' content='https://jcchikikomori.github.io/blog')
+    meta(name='twitter:card' content='portfolio')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
   body
+    //- navigation
     != partial("_shared/nav")
-    != yield
-    footer
-      p Copyright #{year}
-      p Version 0.1
+    //- container
+    div.container.is-fullhd
+      //- jumbotron (TODO: Not yet done though)
+      != partial("_shared/maintenance")
+      //- article content
+      section.section
+        != yield
+      //- footer
+      footer.footer
+        p Copyright #{year}
+        p Version #{version}

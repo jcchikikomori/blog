@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+html {
+  body {
+    background: #f4f4f7;
+    color: #444;
+    font-family: 'Helvetica';
+    height: 100%;
+    // margin: 0;
+    // padding: 50px 0;
+    text-align: center;
+
+    h1 {
+      font-size: $title-size;
+      font-weight: $title-weight;
+    }
+
+    h2 {
+      font-size: $subtitle-size;
+      font-weight: $subtitle-weight;
+    }
+
+    .link+.link {
+      margin-left: .5rem;
+    }
+  }
+}

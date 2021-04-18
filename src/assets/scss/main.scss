@@ -1,23 +1,22 @@
-body {
-  font-family: "Helvetica";
-  text-align: center;
-  padding: 50px 20px 0;
-  background: #f4f4f7;
-  color: #444;
-  margin: 0;
+@charset 'UTF-8';
 
-  h1 {
-    font-size: 65px;
-    line-height: 1.2em;
-    border-bottom: #CCC solid 1px;
-    padding: 20px 0;
-  }
+// 1. Configuration and helpers
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
-  h3 {
-    font-weight: 300;
-  }
+// 2. Vendors
+@import 'vendors/bulma';
 
-  .link+.link {
-    margin-left: 0.5rem;
-  }
-}
+// 3. Base stuff
+@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header', 'layout/footer';
+
+// 5. Components
+@import 'components/button';
+
+// 6. Page-specific styles
+@import 'pages/home', 'pages/maintenance';
+
+// 7. Themes
+@import 'themes/default';
