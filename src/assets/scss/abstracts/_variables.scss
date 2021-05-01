@@ -1,3 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+@media (prefers-color-scheme: dark) {
+  $text: #f4f4f7 !default;
+  $background: #000 !default;
+}

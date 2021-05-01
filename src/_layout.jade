@@ -18,19 +18,48 @@ html(lang='en')
     meta(name='twitter:url' content='https://jcchikikomori.github.io/blog')
     meta(name='twitter:card' content='portfolio')
     //if lt IE 9
-      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
+        integrity='sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==' crossorigin='anonymous')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
+        integrity='sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==' crossorigin='anonymous')
     link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
   body
+    .loading
     //- navigation
     != partial("_shared/nav")
     //- container
-    div.container.is-fullhd
+    .container.is-fullhd
       //- jumbotron (TODO: Not yet done though)
       != partial("_shared/maintenance")
-      //- article content
-      section.section
-        != yield
+    //- container
+    .container
+      .columns
+        .column
+          //- p.bd-notification.is-danger Second column
+          .columns
+            .column
+              //- p.bd-notification.is-danger 50%
+              //- article content
+              section.section
+                .container.is-full-hd
+                  .content
+                    != yield
+            .column.is-one-quarter.is-mobile
+              section.section
+                .content.has-text-left
+                  //- p.bd-notification.is-danger Auto
+                  h1 Quick Links
+                  h2 Recent
+                  ol(type='1')
+                    each article, slug in public.article._data
+                      li
+                        a(href="#{ rootPath }/article/#{ slug }") #{ article.title }
+                  h2 Tags
+                  ol(type='1')
+                    li Coming Soon
+                  h2 Recommended
+                  ol(type='1')
+                    li Coming Soon
       //- footer
       footer.footer
         p Copyright #{year}
