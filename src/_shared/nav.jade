@@ -1,7 +1,7 @@
 nav.navbar(role='navigation' aria-label='main navigation')
   div.container
     .navbar-brand
-      a.navbar-item(href="#{rootPath}")
+      a.navbar-item(href="#{rootPath}/")
         //- img(src='https://jcchikikomori.github.io/portfolio/img/jcc_logo.png' height='28')
         .logo(height='28')
       a.navbar-burger(role='button' aria-label='menu' aria-expanded='false' data-target='navbarBasicExample')
@@ -12,19 +12,5 @@ nav.navbar(role='navigation' aria-label='main navigation')
       .navbar-start
         a.navbar-item(href="#{rootPath}/") Home
         a.navbar-item(href="#{rootPath}/articles") Articles
-        //- .navbar-item.has-dropdown.is-hoverable
-        //-   a.navbar-link
-        //-     | More
-        //-   .navbar-dropdown
-        //-     a.navbar-item(href="#{rootPath}/about") About
-        //-     a.navbar-item Jobs
-        //-     a.navbar-item Contact
-        //-     hr.navbar-divider
-        //-     a.navbar-item Report an issue
       .navbar-end
         a.navbar-item(href="#{rootPath}/about") About
-        //- .navbar-item
-        //-   .buttons
-        //-     a.button.is-primary
-        //-       strong Sign up
-        //-     a.button.is-light Log in
