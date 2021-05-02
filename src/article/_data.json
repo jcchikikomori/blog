@@ -1,8 +1,24 @@
 {
-  "a-simple-article": {
-    "title": "A Simple Article"
+  "folder-sample": {
+    "title": "JCC Blog - Another one but on folder",
+    "content_title": "Another one but on folder",
+    "description": "Another one but on folder",
+    "content_date": "2021-05-02",
+    "content_time": "12:30pm",
+    "timestamp": "1619958659"
   },
   "another-article": {
-    "title": "Another Article"
+    "title": "JCC Blog - Another Article",
+    "content_title": "Another Article",
+    "content_date": "2021-05-02",
+    "content_time": "12:00am",
+    "timestamp": ""
+  },
+  "a-simple-article": {
+    "title": "JCC Blog - A Simple Article",
+    "content_title": "A Simple Article",
+    "content_date": "2021-05-02",
+    "content_time": "12:00am",
+    "timestamp": ""
   }
 }

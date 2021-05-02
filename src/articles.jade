@@ -1,4 +1,7 @@
-ul
+ol(type='1')
   each article, slug in public.article._data
     li
-      a(href="#{ rootPath }/article/#{ slug }") #{ article.title }
+      a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
+      p.
+        Published #{ article.content_date }, #{ article.content_time }
+        (#{ time_format })
