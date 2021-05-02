@@ -33,3 +33,20 @@ html {
     }
   }
 }
+
+.container {
+  .content {
+    h1 {
+      border-radius: .5rem;
+      display: inline-block;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        background-color: $theme-color-dark-1;
+        color: $theme-color-dark-8;
+        padding: .5rem;
+      }
+    }
+  }
+}

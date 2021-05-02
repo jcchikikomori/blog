@@ -4,19 +4,19 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width,initial-scale=1')
-    title JCC Blog
-    meta(name='description' content='Software Developer')
+    title= title
+    meta(name='description' content='#{ description }')
     meta(name='keywords' content='blog, web, mobile-friendly, static-page, html5, github-pages')
-    meta(name='author' content='John Cyrill Corsanes')
-    meta(property='og:title' content='JCC Blog')
+    meta(name='author' content='#{ author }')
+    //- meta(property='og:title' content='JCC Blog')
     meta(property='og:image' content='https://jcchikikomori.github.io/portfolio/img/jcc_logo.jpg')
     meta(property='og:url' content='https://jcchikikomori.github.io/blog')
-    meta(property='og:site_name' content='JCC Blog')
-    meta(property='og:description' content='JCC Blog Site')
-    meta(name='twitter:title' content="JCC's Blog")
+    meta(property='og:site_name' content='#{ title }')
+    meta(property='og:description' content='#{ description }')
+    //- meta(name='twitter:title' content="JCC Blog")
     meta(name='twitter:image' content='https://jcchikikomori.github.io/portfolio/img/jcc_logo.jpg')
     meta(name='twitter:url' content='https://jcchikikomori.github.io/blog')
-    meta(name='twitter:card' content='portfolio')
+    meta(name='twitter:card' content='blog')
     //if lt IE 9
       script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
         integrity='sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==' crossorigin='anonymous')
@@ -41,8 +41,9 @@ html(lang='en')
               //- p.bd-notification.is-danger 50%
               //- article content
               section.section
-                .container.is-full-hd
-                  .content
+                .container.article-container.is-full-hd
+                  .content.article-content
+                    h1 #{content_title}
                     != yield
             .column.is-one-quarter.is-mobile
               section.section
@@ -53,17 +54,22 @@ html(lang='en')
                   ol(type='1')
                     each article, slug in public.article._data
                       li
-                        a(href="#{ rootPath }/article/#{ slug }") #{ article.title }
+                        a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
+                        p.
+                          Published #{ article.content_date }, #{ article.content_time }
+                          (#{ time_format })
                   h2 Tags
                   ol(type='1')
                     li Coming Soon
                   h2 Recommended
                   ol(type='1')
                     li Coming Soon
-      //- footer
-      footer.footer
+    //- footer
+    footer.footer
+      .container
         p Copyright #{year}
         p Version #{version}
+    //- script(type='text/javascript' src="#{rootPath}/assets/js/bulma.js") // Conflict with JQuery
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
       integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
       crossorigin='anonymous')

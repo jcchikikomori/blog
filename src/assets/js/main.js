@@ -1,13 +1,16 @@
 $(document).ready(function() {
-  var pretitle = "JCC Blog - ";
-  var title = $("#title").text() || "Articles";
-  var __path = window.location.pathname;
+  // var pretitle = "JCC Blog - ";
+  // var pretitle_empty = "JCC Blog";
+  // var title = $("#title").text();
+  // var __path = window.location.pathname;
 
-  if (__path !== "/") {
-    $(document).prop("title", pretitle + title);
-  }
-
-  $(".loading").hide();
+  // if (__path !== "/") {
+  //   if (!!title) {
+  //     $(document).prop("title", pretitle + title);
+  //   } else {
+  //     $(document).prop("title", pretitle_empty);
+  //   }
+  // }
 
   // Check for click events on the navbar burger icon
   $(".navbar-burger").click(function() {
@@ -15,4 +18,6 @@ $(document).ready(function() {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
+
+  $(".loading").hide();
 });
