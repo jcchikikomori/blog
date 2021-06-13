@@ -44,6 +44,11 @@ html(lang='en')
                 .container.article-container.is-full-hd
                   .content.article-content
                     h1 #{content_title}
+                    if content_date && content_time
+                      p Published at #{content_date}, #{content_time}
+                      hr
+                    if description
+                      p #{description}
                     != yield
             .column.is-one-quarter.is-mobile
               section.section
@@ -52,18 +57,27 @@ html(lang='en')
                   h1 Quick Links
                   h2 Recent
                   ol(type='1')
+                    - var count = 0
+                    - var seeMore = false
                     each article, slug in public.article._data
-                      li
-                        a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
-                        p.
-                          Published #{ article.content_date }, #{ article.content_time }
-                          (#{ time_format })
-                  h2 Tags
-                  ol(type='1')
-                    li Coming Soon
-                  h2 Recommended
-                  ol(type='1')
-                    li Coming Soon
+                      if (count < 3)
+                        - count++
+                        li
+                          a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
+                          p.
+                            Published #{ article.content_date }, #{ article.content_time }
+                            (#{ time_format })
+                      else
+                        if !seeMore
+                          - seeMore = true
+                          br
+                          a(href="#{ rootPath }/articles") See more..
+                  //- h2 Tags
+                  //- ol(type='1')
+                  //-   li Coming Soon
+                  //- h2 Recommended
+                  //- ol(type='1')
+                  //-   li Coming Soon
     //- footer
     footer.footer
       .container
@@ -74,3 +88,5 @@ html(lang='en')
       integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
       crossorigin='anonymous')
     script(type='text/javascript' src="#{rootPath}/assets/js/main.js")
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-53297367-3")
+
