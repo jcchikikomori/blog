@@ -1,10 +1,15 @@
 {
+  "index": {
+    "description": ""
+  },
   "about": {
     "title": "JCC Blog - About",
-    "content_title": "About"
+    "content_title": "About",
+    "description": ""
   },
   "articles": {
     "title": "JCC Blog - Articles",
-    "content_title": "Articles"
+    "content_title": "Articles",
+    "description": "Set of articles. That's my current description for this page for now"
   }
 }

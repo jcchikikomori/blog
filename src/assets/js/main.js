@@ -1,17 +1,11 @@
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-53297367-3');
+
+// TODO: Replace JQuery as the world abadons this library, year by year
 $(document).ready(function() {
-  // var pretitle = "JCC Blog - ";
-  // var pretitle_empty = "JCC Blog";
-  // var title = $("#title").text();
-  // var __path = window.location.pathname;
-
-  // if (__path !== "/") {
-  //   if (!!title) {
-  //     $(document).prop("title", pretitle + title);
-  //   } else {
-  //     $(document).prop("title", pretitle_empty);
-  //   }
-  // }
-
   // Check for click events on the navbar burger icon
   $(".navbar-burger").click(function() {
     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
@@ -19,5 +13,5 @@ $(document).ready(function() {
     $(".navbar-menu").toggleClass("is-active");
   });
 
-  $(".loading").hide();
+  $(".loading").fadeOut();
 });

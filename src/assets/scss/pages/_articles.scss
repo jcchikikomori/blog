@@ -1,0 +1,17 @@
+.container {
+  .article-container {
+    .article-content {
+      img {
+        margin: .5rem;
+
+        &+p {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .article-list {
+      text-align: left;
+    }
+  }
+}
