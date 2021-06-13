@@ -10,8 +10,8 @@
 
 ## Testing
 
-Run `harp server src` in ROOT directory (not in `src/`)
+Run `harp src` in ROOT directory (not in `src/`)
 
 ## Compile build
 
-Run `harp compile src docs` in ROOT directory
+Run `harp src docs` in ROOT directory
