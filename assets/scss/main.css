@@ -102,11 +102,13 @@ html body {
     word-break: normal; }
   @media (prefers-color-scheme: dark) {
     html body {
-      color: #f8f9fa; } }
+      color: #f8f9fa; }
+      html body hr {
+        background-color: #343a40; } }
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: #212529; } }
+    background-color: #000; } }
 
 .container .content h1 {
   border-radius: .5rem;
