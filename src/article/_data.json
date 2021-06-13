@@ -1,24 +1,48 @@
 {
+  "long-article": {
+    "title": "JCC Blog - Long Article",
+    "content_title": "Long article",
+    "description": "Not so long description",
+    "author": "Long Author",
+    "content_date": "2021-06-02",
+    "content_time": "06:02pm",
+    "timestamp": "",
+    "show": true
+  },
   "folder-sample": {
     "title": "JCC Blog - Another one but on folder",
     "content_title": "Another one but on folder",
     "description": "Another one but on folder",
     "content_date": "2021-05-02",
     "content_time": "12:30pm",
-    "timestamp": "1619958659"
+    "timestamp": "1619958659",
+    "show": true
   },
   "another-article": {
     "title": "JCC Blog - Another Article",
     "content_title": "Another Article",
+    "description": "",
     "content_date": "2021-05-02",
     "content_time": "12:00am",
-    "timestamp": ""
+    "timestamp": "",
+    "show": true
   },
   "a-simple-article": {
     "title": "JCC Blog - A Simple Article",
     "content_title": "A Simple Article",
+    "description": "",
     "content_date": "2021-05-02",
     "content_time": "12:00am",
-    "timestamp": ""
+    "timestamp": "",
+    "show": true
+  },
+  "hidden-article": {
+    "title": "JCC Blog - Hidden Article",
+    "content_title": "Hidden Article",
+    "description": "You found me.",
+    "content_date": "2021-05-02",
+    "content_time": "12:00am",
+    "timestamp": "",
+    "show": false
   }
 }
