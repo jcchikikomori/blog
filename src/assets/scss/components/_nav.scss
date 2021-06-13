@@ -1,3 +1,13 @@
+.navbar {
+  @media (prefers-color-scheme: dark) {
+    background-color: $theme-color-dark-0;
+
+    .navbar-item {
+      color: $theme-color-dark-8 !important;
+    }
+  }
+}
+
 .navbar-brand {
   .navbar-item {
     display: block;
