@@ -15,9 +15,9 @@ dependencies:
   '@vizuaalog/bulmajs': 0.12.1
   bulma: 0.9.2
   bulma-prefers-dark: 0.1.0-beta.0
+  coffeescript: 2.5.1
 
 devDependencies:
-  coffeescript: 2.5.1
   eslint: 7.24.0
   eslint-config-airbnb-base: 14.2.1_dc9d9d711f9715ea38ced5881f20889e
   eslint-config-jquery: 3.0.0
@@ -208,7 +208,7 @@ packages:
     resolution: {integrity: sha512-J2jRPX0eeFh5VKyVnoLrfVFgLZtnnmp96WQSLAS8OrLm2wtQLcnikYKe1gViJKDH7vucjuhHvBKKBP3rKcD1tQ==}
     engines: {node: '>=6'}
     hasBin: true
-    dev: true
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

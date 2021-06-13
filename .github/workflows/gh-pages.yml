@@ -24,7 +24,7 @@ jobs:
       - name: Install 🔧
         run: |
           npm install -g pnpm
-          pnpm install -g harp json node-sass
+          pnpm install -g harp json node-sass coffeescript
           cd src && pnpm install
           cd ~/work/blog/blog/
       - name: Set rootPath to _harp.json 🔧
@@ -33,7 +33,7 @@ jobs:
       - name: Build 🔧
         continue-on-error: true # workaround due to bulma's segmentation fault
         run: |
-          harp compile src docs
+          harp src docs
       - name: Compile SCSS manually
         run: |
           ls -al src/node_modules
