@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "JCC Blog",
   "main": "index.jade",
   "private": true,
@@ -23,15 +23,15 @@
   "homepage": "https://github.com/jcchikikomori/blog#readme",
   "dependencies": {
     "@vizuaalog/bulmajs": "^0.12.1",
-    "bulma": "^0.9.2",
+    "bulma": "^0.9.3",
     "bulma-prefers-dark": "^0.1.0-beta.0",
     "coffeescript": "^2.5.1"
   },
   "devDependencies": {
-    "eslint": "^7.24.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-jquery": "^3.0.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jquery": "^1.5.1"
   }
 }
