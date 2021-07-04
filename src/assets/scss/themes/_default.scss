@@ -11,15 +11,15 @@ html {
     // padding: 50px 0;
     text-align: center;
 
-    // h1 {
-    //   font-size: $title-size;
-    //   font-weight: $title-weight;
-    // }
+    h1 {
+      font-size: $title-size;
+      font-weight: $title-weight;
+    }
 
-    // h2 {
-    //   font-size: $subtitle-size;
-    //   font-weight: $subtitle-weight;
-    // }
+    h2 {
+      font-size: $subtitle-size;
+      font-weight: $subtitle-weight;
+    }
 
     .link+.link {
       margin-left: .5rem;
@@ -31,14 +31,6 @@ html {
       white-space: pre-line;
       word-break: normal;
     }
-
-    @media (prefers-color-scheme: dark) {
-      color: $theme-color-dark-8;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $theme-color-dark-0;
   }
 }
 
@@ -54,16 +46,6 @@ html {
         background-color: $theme-color-dark-1;
         color: $theme-color-dark-8;
         padding: .5rem;
-      }
-
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      span {
-        color: $theme-color-dark-8 !important;
       }
     }
   }
