@@ -1,12 +1,16 @@
-@media (prefers-color-scheme: dark) {
-  .footer {
-    background-color: #212529; } }
+.modal .modal-background {
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media (prefers-color-scheme: dark) {
+    .modal .modal-background {
+      background-color: rgba(73, 80, 87, 0.8); } }
 
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background-color: #212529; }
-    .navbar .navbar-item {
-      color: #f8f9fa !important; } }
+.modal .modal-card {
+  padding: 0 2vw; }
+  .modal .modal-card .modal-card-body {
+    background-color: #ede9e9; }
+    @media (prefers-color-scheme: dark) {
+      .modal .modal-card .modal-card-body {
+        background-color: #212529; } }
 
 .navbar-brand .navbar-item {
   display: block;
@@ -25,7 +29,7 @@
 .navbar-menu .navbar-item {
   padding: .5rem; }
   @media (prefers-color-scheme: dark) {
-    .navbar-menu .navbar-item:hover {
+    .navbar-menu .navbar-item:hover, .navbar-menu .navbar-item:focus {
       background-color: #343a40;
       color: #f8f9fa; } }
 
@@ -86,8 +90,18 @@
   .container .article-container .article-content img + p {
     margin-top: 1rem; }
 
+.container .article-container .article-content ul li {
+  display: list-item;
+  text-align: left; }
+
+.container .article-container .article-content .timestamp {
+  font-style: italic;
+  font-size: .9rem; }
+
 .container .article-container .article-list {
   text-align: left; }
+  .container .article-container .article-list .article-list-entry + .article-list-entry {
+    margin-top: 1.5rem; }
 
 html body {
   font-family: 'Helvetica';
@@ -108,9 +122,9 @@ html body {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: #000; } }
+    background-color: black; } }
 
-.container .content h1 {
+.container .content h1, .container .content h2, .container .content h3 {
   border-radius: .5rem;
   display: inline-block; }
 
