@@ -23,7 +23,7 @@
   .navbar-item {
     padding: .5rem;
 
-    &:hover {
+    &:hover, &:focus {
       @media (prefers-color-scheme: dark) {
         background-color: $theme-color-dark-1;
         color: $theme-color-dark-8;

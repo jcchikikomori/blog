@@ -43,18 +43,19 @@ html(lang='en')
               section.section
                 .container.article-container.is-full-hd
                   .content.article-content
-                    h1 #{content_title}
+                    if !imported
+                      h1 #{content_title}
                     if content_date && content_time
                       p Published at #{content_date}, #{content_time}
                       hr
-                    if description
+                    if description && !imported
                       p #{description}
                     != yield
             .column.is-one-quarter.is-mobile
               section.section
                 .content.has-text-left
                   //- p.bd-notification.is-danger Auto
-                  h1 Quick Links
+                  //- h1 Quick Links
                   h2 Recent
                   ol(type='1')
                     - var count = 0
