@@ -22,9 +22,6 @@ html(lang='en')
         integrity='sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==' crossorigin='anonymous')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
         integrity='sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==' crossorigin='anonymous')
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"
-      integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous"
-      referrerpolicy="no-referrer")
     link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
   body
     .loading
@@ -46,18 +43,19 @@ html(lang='en')
               section.section
                 .container.article-container.is-full-hd
                   .content.article-content
-                    h1 #{content_title}
+                    if !imported
+                      h1 #{content_title}
                     if content_date && content_time
                       p Published at #{content_date}, #{content_time}
                       hr
-                    if description
+                    if description && !imported
                       p #{description}
                     != yield
             .column.is-one-quarter.is-mobile
               section.section
                 .content.has-text-left
                   //- p.bd-notification.is-danger Auto
-                  h1 Quick Links
+                  //- h1 Quick Links
                   h2 Recent
                   ol(type='1')
                     - var count = 0

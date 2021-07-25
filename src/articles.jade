@@ -1,12 +1,12 @@
 ol(type='1' class="article-list")
   each article, slug in public.article._data
     if article.show
-      li
+      li.article-list-entry
         a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
         if article.description
           p #{ article.description }
         else
           p No Description
-        p.
+        p.timestamp.
           Published #{ article.content_date }, #{ article.content_time }
           (#{ time_format })
