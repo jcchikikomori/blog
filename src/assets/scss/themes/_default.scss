@@ -31,6 +31,14 @@ html {
       white-space: pre-line;
       word-break: normal;
     }
+
+    @media (prefers-color-scheme: dark) {
+      color: $theme-color-dark-8;
+
+      hr {
+        background-color: $theme-color-dark-1;
+      }
+    }
   }
 }
 
