@@ -1,4 +1,24 @@
 {
+  "google-alternatives-for-huawei-devices": {
+    "title": "JCC Blog - Google alternatives for Huawei Devices",
+    "content_title": "Google alternatives for Huawei devices",
+    "description": "Last year, Huawei was banned/added to the US entity list for security concerns. That ban badly hurt the company because Google and other US companies had no other choice to join the bandwagon (pun unintended), so i already realized how large the impact could occur just by preventing using an ecosystem like Google, and how can I use my Huawei device for online things?",
+    "author": "John Cyrill Corsanes",
+    "content_date": "2020-11-20",
+    "content_time": "",
+    "timestamp": "",
+    "show": true
+  },
+  "shifting-to-php-to-r": {
+    "title": "JCC Blog - From Static to Dynamic",
+    "content_title": "From Static to Dynamic",
+    "description": "Adapting a new approach on Web Development",
+    "author": "John Cyrill Corsanes",
+    "content_date": "2019-12-14",
+    "content_time": "",
+    "timestamp": "",
+    "show": true
+  },
   "long-article": {
     "title": "JCC Blog - Long Article",
     "content_title": "Long article",
@@ -16,7 +36,7 @@
     "content_date": "2021-05-02",
     "content_time": "12:30pm",
     "timestamp": "1619958659",
-    "show": true
+    "show": false
   },
   "another-article": {
     "title": "JCC Blog - Another Article",
@@ -25,7 +45,7 @@
     "content_date": "2021-05-02",
     "content_time": "12:00am",
     "timestamp": "",
-    "show": true
+    "show": false
   },
   "a-simple-article": {
     "title": "JCC Blog - A Simple Article",
@@ -34,7 +54,7 @@
     "content_date": "2021-05-02",
     "content_time": "12:00am",
     "timestamp": "",
-    "show": true
+    "show": false
   },
   "hidden-article": {
     "title": "JCC Blog - Hidden Article",

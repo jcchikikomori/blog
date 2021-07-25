@@ -8,10 +8,26 @@
           margin-top: 1rem;
         }
       }
+
+      ul {
+        li {
+          display: list-item;
+          text-align: left;
+        }
+      }
+
+      .timestamp {
+        font-style: italic;
+        font-size: .9rem;
+      }
     }
 
     .article-list {
       text-align: left;
+
+      .article-list-entry + .article-list-entry {
+        margin-top: 1.5rem;
+      }
     }
   }
 }
