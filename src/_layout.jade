@@ -17,12 +17,17 @@ html(lang='en')
     meta(name='twitter:image' content='https://jcchikikomori.github.io/portfolio/img/jcc_logo.jpg')
     meta(name='twitter:url' content='https://jcchikikomori.github.io/blog')
     meta(name='twitter:card' content='blog')
+    //- TODO: Migrate to jsdelivr.com
     //if lt IE 9
       script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
         integrity='sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==' crossorigin='anonymous')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
         integrity='sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==' crossorigin='anonymous')
     link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      integrity="sha256-UDtbUHqpVVfXmdJcQVU/bfDEr9xldf3Dbd0ShD0Uf/Y=" crossorigin="anonymous")
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-prefers-dark@0.1.0-beta.1/css/bulma-prefers-dark.css"
+      integrity="sha256-wQI3d0fArzMuGDTXVXZ+fCbB7NBZM+HRpD2My85B3PQ=" crossorigin="anonymous")
   body
     .loading
     //- navigation

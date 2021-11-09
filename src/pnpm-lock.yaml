@@ -2,8 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@vizuaalog/bulmajs': ^0.12.1
-  bulma: ^0.9.3
-  bulma-prefers-dark: ^0.1.0-beta.0
   coffeescript: ^2.5.1
   eslint: ^7.30.0
   eslint-config-airbnb-base: ^14.2.1
@@ -13,8 +11,6 @@ specifiers:
 
 dependencies:
   '@vizuaalog/bulmajs': 0.12.1
-  bulma: 0.9.3
-  bulma-prefers-dark: 0.1.0-beta.0
   coffeescript: 2.5.1
 
 devDependencies:
@@ -183,14 +179,6 @@ packages:
       balanced-match: 1.0.2
       concat-map: 0.0.1
     dev: true
-
-  /bulma-prefers-dark/0.1.0-beta.0:
-    resolution: {integrity: sha512-EeDW8pQrkYEOXo2l3WykfghbUzi8jlQWGI+Cu2HwmXwQHMcoGF6yiKYCNShttN+8z3atq8fLWh3B7pqXUV4fBA==}
-    dev: false
-
-  /bulma/0.9.3:
-    resolution: {integrity: sha512-0d7GNW1PY4ud8TWxdNcP6Cc8Bu7MxcntD/RRLGWuiw/s0a9P+XlH/6QoOIrmbj6o8WWJzJYhytiu9nFjTszk1g==}
-    dev: false
 
   /call-bind/1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
