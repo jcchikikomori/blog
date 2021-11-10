@@ -18,7 +18,11 @@
   .navbar-brand .navbar-item .logo {
     background-position: center;
     background-size: cover;
-    height: 32px; }
+    height: 32px;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available; }
     @media (prefers-color-scheme: light) {
       .navbar-brand .navbar-item .logo {
         background-image: url("https://jcchikikomori.github.io/portfolio/img/jcc_logo.png"); } }
@@ -107,6 +111,12 @@ html body {
   font-family: 'Helvetica';
   height: 100%;
   text-align: center; }
+  html body h1 {
+    font-size: inherit;
+    font-weight: inherit; }
+  html body h2 {
+    font-size: inherit;
+    font-weight: inherit; }
   html body .link + .link {
     margin-left: .5rem; }
   html body .-paragraph {
@@ -119,10 +129,6 @@ html body {
       color: #f8f9fa; }
       html body hr {
         background-color: #343a40; } }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: black; } }
 
 .container .content h1, .container .content h2, .container .content h3 {
   border-radius: .5rem;

@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "JCC Blog",
   "main": "index.jade",
   "private": true,
