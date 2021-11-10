@@ -1,0 +1,37 @@
+name: Testing Build
+on:
+  push:
+    branches:
+      - feature/*
+      - hotfix/*
+      - release/*
+      - develop
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install 🔧
+        run: |
+          npm install -g pnpm
+          pnpm install -g harp json node-sass coffeescript
+          cd src && pnpm install
+          cd ~/work/blog/blog/
+      - name: Set rootPath to _harp.json 🔧
+        run: |
+          json -I -f src/_harp.json -e "this.globals.rootPath=\"/blog\""
+      - name: Build 🔧
+        continue-on-error: false
+        run: |
+          harp src docs
+          ls -lah docs
