@@ -47,27 +47,27 @@ Now i can install my current apps, but it wouldn’t run Google apps, of course.
 * For **Gmail**, I use **Microsoft Outlook
   <br/>*I’ve used Huawei’s Email client for a month, and I found something’s missing on the user experience level.*
 
-* For **Google Chrome**, I use **Mozilla Firefox **or** Microsoft Edge
+* For **Google Chrome**, I use **Mozilla Firefox** or **Microsoft Edge**
   <br/>*I’ve tried Huawei Browser (which is a Chromium-based browser), but i wanted to sync my bookmarks so that is not my best option.*
 
-* For **Google Docs/Sheets/Slides**, I use **Microsoft Office
+* For **Google Docs/Sheets/Slides**, I use **Microsoft Office**
   <br/>*It has Google Drive support*
 
-* Speaking of **Google Drive **support, I use **FX File Manager
+* Speaking of **Google Drive **support, I use **FX File Manager**
   <br/>*I currently used FX File Manager with a separate premium key installed. If you don’t have a Google Drive,<br />I suggest to use MEGA or Huawei’s Drive service, and it’s affordable.*
 
-* For **YouTube** (including YT Music), I use [**YouTube Vanced](https://github.com/YTVanced/VancedManager)
+* For **YouTube** (including YT Music), I use **[YouTube Vanced](https://github.com/YTVanced/VancedManager)**
   <br/>*DISCLAIMER: I do not endorse this for piracy or copyright infringement though, so use this at your own risk.*
 
 * For **Google Photos**, I use **Photo Tool **(available only on Play Store) or **Huawei’s** **Cloud** service
 
-* For **Google Maps**, I use the following: their [**PWA version](https://www.google.com/maps)** or another app called **HERE WeGo** (Has navigation & can navigate offline)
+* For **Google Maps**, I use the following: their [PWA version](https://www.google.com/maps) or another app called **HERE WeGo** (Has navigation & can navigate offline)
   <br/>*The Huawei map app is fine but the map is kinda outdated since it never uses their data from Google at all*
 
-* For password management (including auto-filling it), I use **SafeInCloud.
-  <br/>*You can use **RememBear** or **Firefox** **Lockwise.***
+* For password management (including auto-filling it), I use **SafeInCloud.**
+  <br/>*You can use **RememBear** or **Firefox Lockwise.***
 
-* For Two-factor Authentication, I use **Authy
+* For Two-factor Authentication, I use **Authy**
   <br/>*Just ignore the Google Play Services warning message, and it would work just fine.*
 
 ### Progressive Web Apps with Google
