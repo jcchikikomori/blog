@@ -12,13 +12,13 @@ html {
     text-align: center;
 
     h1 {
-      font-size: $title-size;
-      font-weight: $title-weight;
+      font-size: inherit;
+      font-weight: inherit;
     }
 
     h2 {
-      font-size: $subtitle-size;
-      font-weight: $subtitle-weight;
+      font-size: inherit;
+      font-weight: inherit;
     }
 
     .link+.link {
