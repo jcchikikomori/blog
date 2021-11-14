@@ -4,3 +4,4 @@ docs
 # Others
 *.log
 .pnpm-store/
+.DS_Store

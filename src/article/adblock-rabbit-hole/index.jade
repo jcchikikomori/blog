@@ -1,69 +1,83 @@
-img(src="#{rootPath}/assets/img/ruby.png", alt="what a long image, eh?")
+h2 It begins in YouTube (of course, lol)
+iframe(width="790" height="395" src="https://www.youtube.com/embed/KBXTnrD_Zs4"
+       title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+p.
+  It began in a YouTube video that it says that we can block
+  any ads you want including YouTube ads which is i became interested on how
+  an DNS server can do the trick. For context, I HATE ADS, not because of their 
+  system, but the content were just awful and not suitable.
+  One of them was the mobile games, especially the ones made with Unity Game engine.
+p.
+  That time i am broke and cannot buy a specific hardware like Raspberry Pi, plus
+  i am not yet fully convinced or i was still skeptical if it's really working.
+  So, i decided to rent a VPS or Virtual Private Server which is one of my worst decisions
+  that time because it was more expensive to manage than to buy Raspberry Pi, but
+  SPOILERS: It became useful for my load balancing project (lols)
 
+h2 PiHole was not my thing back then
 p.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-  ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-  in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
+  At first, i don't understand on setting it all up, since i don't study networking stuff,
+  except the Wifi routers (came from the manual & YOUTUBE too :kekw:), so i followed their
+  guide very carefully, but i didn't set the DNS address in my router because i was already
+  convinced that it might not work, plus the router was for everything so i cannot disturb
+  them while they are doing online classes or work.
 p.
-  Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
-  Curabitur gravida arcu ac tortor. Pretium aenean pharetra magna ac.
-  Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
-  Ultricies mi quis hendrerit dolor.
-  Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus.
-  Feugiat in fermentum posuere urna nec. Accumsan tortor posuere ac ut.
-  Quam lacus suspendisse faucibus interdum.
-  Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis.
-  Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.
-  Pellentesque habitant morbi tristique senectus. Et malesuada fames ac turpis.
-  Feugiat nibh sed pulvinar proin gravida hendrerit lectus.
-  Varius sit amet mattis vulputate. Volutpat odio facilisis mauris sit.
-  Viverra orci sagittis eu volutpat odio facilisis mauris sit. Turpis tincidunt id aliquet risus.
-img(src="http://lorempixel.com/400/200", alt="")
+  So, the setup was done, and it works, but i wanted to know about the filter lists
+img(src="#{rootPath}/assets/img/filterlists.png", alt="")
 p.
-  Enim facilisis gravida neque convallis.
-  Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
-  Nec sagittis aliquam malesuada bibendum. Mattis aliquam faucibus purus in massa tempor.
-  Diam sollicitudin tempor id eu nisl. Tellus in metus vulputate eu scelerisque felis imperdiet.
-  Vel fringilla est ullamcorper eget nulla facilisi.
-  Risus sed vulputate odio ut enim. Commodo nulla facilisi nullam vehicula.
-  Nisi quis eleifend quam adipiscing vitae proin sagittis.
-  Quis ipsum suspendisse ultrices gravida dictum fusce.
+  Filter lists are like the library, but the books are about lists of websites, domains,
+  hostnames, etc., with the return value like 0.0.0.0 which is NODATA
+  (no data will be received, so no ads :wink:) according to their documentation
 p.
-  Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-  Tristique senectus et netus et malesuada fames ac.
-  Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum.
-  In hac habitasse platea dictumst vestibulum.
-  Velit egestas dui id ornare arcu odio ut sem nulla.
-  Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu.
-  Nibh tellus molestie nunc non blandit massa. Phasellus vestibulum lorem sed risus ultricies.
-  Aliquet eget sit amet tellus cras adipiscing enim.
-  Ac ut consequat semper viverra nam libero justo.
-  Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor.
-img(src="http://lorempixel.com/400/200", alt="")
+  These lists might not work on yours, but it really depends on what kind of content
+  you wanted to block (e.g: Porn, Gambling, Online Games, Social Media, etc.)
+
+h2 Found the biggest problem
 p.
-  Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat.
-  Sem viverra aliquet eget sit. Faucibus a pellentesque sit amet porttitor eget dolor morbi.
-  Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.
-  Quam id leo in vitae turpis massa sed elementum.
-  Adipiscing bibendum est ultricies integer quis auctor.
-  Ac feugiat sed lectus vestibulum mattis ullamcorper.
-  Enim nulla aliquet porttitor lacus luctus accumsan tortor.
-  Eu volutpat odio facilisis mauris sit amet massa vitae tortor.
-  Tempor orci dapibus ultrices in. Arcu bibendum at varius vel pharetra vel turpis nunc eget.
-  Metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-  Scelerisque mauris pellentesque pulvinar pellentesque habitant.
-  Sit amet dictum sit amet justo. Orci porta non pulvinar neque laoreet suspendisse interdum.
-  Bibendum ut tristique et egestas quis ipsum. Diam phasellus vestibulum lorem sed risus.
-  Nisl vel pretium lectus quam id leo in vitae turpis. Elementum eu facilisis sed odio morbi quis.
+  Coming soon
+
+h3 DNS Settings on various mobile devices
 p.
-  Massa tempor nec feugiat nisl. Mattis molestie a iaculis at erat.
-  In eu mi bibendum neque egestas congue quisque egestas diam.
-  Rutrum tellus pellentesque eu tincidunt. Fermentum posuere urna nec tincidunt praesent semper.
-  Id faucibus nisl tincidunt eget nullam non nisi est.
-  Viverra nam libero justo laoreet sit. Suspendisse ultrices gravida dictum fusce ut.
-  Tristique magna sit amet purus gravida quis blandit. Enim nunc faucibus a pellentesque sit.
-  Vitae ultricies leo integer malesuada nunc vel.
+  Coming soon
+
+h2 AdBlocking alternatives
+p.
+  Coming soon
+
+h3 Cloudflare
+p.
+  Coming soon
+
+h3 OpenDNS
+p.
+  Coming soon
+
+h3 AdHole
+p.
+  Coming soon
+
+h3 NextDNS
+p.
+  Coming soon
+
+h2 Zoomer reacts to DNS-over-TLS & DNS-over-HTTPS for the first time
+p.
+  Coming soon
+
+h2 Bought the hardware, but still broke
+p.
+  Coming soon
+
+h2 Setting up my own DNS Server in this "smol" hardware
+p.
+  Coming soon
+
+h2 Tried AdGuard Home
+p.
+  Coming soon
+
+h2 How about load balancing between VPS and my Home server
+p.
+  Coming soon
+
