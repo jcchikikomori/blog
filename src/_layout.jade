@@ -74,9 +74,9 @@ html(lang='en')
                         - count++
                         li
                           a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
-                          p.
-                            Published #{ article.content_date }, #{ article.content_time }
-                            (#{ time_format })
+                          //- p.
+                          //-   Published #{ article.content_date }, #{ article.content_time }
+                          //-   (#{ time_format })
                       else
                         if !seeMore
                           - seeMore = true

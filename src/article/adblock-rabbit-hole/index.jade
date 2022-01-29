@@ -35,29 +35,63 @@ p.
 
 h2 Found the biggest problem
 p.
-  Coming soon
+  DNS Resolvers literally resolves the domains that you are browsing.
+  If i go to #[code facebook.com], the resolver will just gave you an IP address depending on your location.
+  So if i wanted to block some content or ads popping up at YouTube, it will definetely not work.
+img(src="#{rootPath}/assets/img/how-dns-works.jpg", alt="Best Photoshop ever")
 
 h3 DNS Settings on various mobile devices
 p.
-  Coming soon
-
-h2 AdBlocking alternatives
+  Another limitations of ad-block is on mobile devices. Android and iOS both have different approach of
+  network security. On iOS, you have to either generate an profile then install on each devices that runs with that system, 
+  or install an app with dedicated VPN, such as #[a(href='https://go.blokada.org/appstore' target='_blank') Blokada].
 p.
-  Coming soon
+  Meanwhile on Android, well...
+  For older ones, you have to install an app with dedicated VPN,
+  such as #[a(href='https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen&hl=en&gl=US' target='_blank') Nebulo]
+  or #[a(href='https://go.blokada.org/play' target='_blank') Blokada].
+  For newer ones specifically for Android 9 and up, 
+  #[a(href='https://www.androidpolice.com/2020/03/26/make-android-use-dns-server-choice/' target='_blank')] Private DNS option is available, 
+  and many ad-blocker DNS already offers you to use them.
+
+h2 Choosing the right DNS resolver
+p.
+  Now you have DNS resolver client, then asking to your ancestors that, which DNS resolver should i use?
 
 h3 Cloudflare
 p.
-  Coming soon
+  Cloudflare is the fastest & the most secure one but there is no adblocking
+p.
+  It has different variants depending what you want.
+  Learn more #[a(href='https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/' target='_blank') here].
 
 h3 OpenDNS
 p.
-  Coming soon
+  This is the bottom entry of my list, except if you are outside Asia. 
+  Just like Cloudflare, there is no adblocking and you can also secure your internet against malicious sites.
+p.
+  Learn more #[a(href='https://use.opendns.com/' target='_blank') here].
 
-h3 AdHole
+h3 NextDNS
+p.
+  NextDNS took a different approach, by customizing your own DNS resolver, including adblocking! 
+  I am currently using this one because it's cheap and it's features such as: 
+ul
+  li AI-powered security 
+  li Parental Controls 
+  li DNS Caching 
+  li AdBlocking customization such as choosing filter lists available
+  li Multiple Profiles
+  li Available on almost all devices, except Brick Phones (go try it)
+  li You can try it right now, before signing up!
+p.
+  Learn more about #[a(href='https://nextdns.io/?from=ntf86sfc' target='_blank') NextDNS here].
+
+h3 BraveDNS
 p.
   Coming soon
 
-h3 NextDNS
+h3 AdGuard / AdGuard Home
 p.
   Coming soon
 
@@ -65,7 +99,7 @@ h2 Zoomer reacts to DNS-over-TLS & DNS-over-HTTPS for the first time
 p.
   Coming soon
 
-h2 Bought the hardware, but still broke
+h2 Bought the Raspberry Pi Zero
 p.
   Coming soon
 
@@ -73,11 +107,22 @@ h2 Setting up my own DNS Server in this "smol" hardware
 p.
   Coming soon
 
-h2 Tried AdGuard Home
-p.
-  Coming soon
-
 h2 How about load balancing between VPS and my Home server
 p.
   Coming soon
+
+h2 Hardware alternatives
+p.
+  Coming soon
+
+h2 Have you tried YouTube adblocking on a browser?
+p.
+  Yes i have. I know it will works because, unline DNS poisoning/adblocking, we can skip the ads anytime you want due to the 
+  adblocking extensions that can manipulate any elements inside the pages including YouTube, Spotify, even porn can be more enjoyful!
+
+h2 Conclusion
+p.
+  Adblocking was still like in a cat & mouse chase situation, and YouTube was really aggressive on their system.
+  Other than that, we can enjoy ad-free, smooth browsing experience with these adblocking solutions. But if you are developing apps 
+  that involves the internet, you might consider that don't forget to disable adblocking or add your domain to the whitelist of your choice!
 
