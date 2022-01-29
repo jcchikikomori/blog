@@ -25,25 +25,25 @@ jobs:
         run: |
           npm install -g pnpm
           pnpm install -g harp json node-sass coffeescript
-          cd src && pnpm install
+          pnpm install
           cd ~/work/blog/blog/
       - name: Set rootPath to _harp.json 🔧
         run: |
-          json -I -f src/_harp.json -e "this.globals.rootPath=\"/blog\""
+          json -I -f public/_harp.json -e "this.globals.rootPath=\"/blog\""
       - name: Build 🔧
         continue-on-error: false
         run: |
-          harp src docs
+          harp public docs
       - name: Compile SCSS manually
         run: |
-          ls -al src/node_modules
-          node-sass --omit-source-map-url src/assets/scss/main.scss docs/assets/scss/main.css
-          ls -al docs/assets
+          ls -al public/node_modules
+          node-sass --omit-source-map-url public/assets/css/main.scss docs/assets/css/main.css
+          ls -al docs/public
       - name: Compile JS manually
         run: |
           mkdir -p docs/assets/js
-          cp src/assets/js/main.js docs/assets/js/main.js
-          ls -al docs/assets
+          cp public/assets/js/index.js docs/assets/js/index.js
+          ls -al docs/public
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
