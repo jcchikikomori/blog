@@ -1,0 +1,128 @@
+h2 It begins in YouTube (of course, lol)
+iframe(width="790" height="395" src="https://www.youtube.com/embed/KBXTnrD_Zs4"
+       title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+p.
+  It began in a YouTube video that it says that we can block
+  any ads you want including YouTube ads which is i became interested on how
+  an DNS server can do the trick. For context, I HATE ADS, not because of their 
+  system, but the content were just awful and not suitable.
+  One of them was the mobile games, especially the ones made with Unity Game engine.
+p.
+  That time i am broke and cannot buy a specific hardware like Raspberry Pi, plus
+  i am not yet fully convinced or i was still skeptical if it's really working.
+  So, i decided to rent a VPS or Virtual Private Server which is one of my worst decisions
+  that time because it was more expensive to manage than to buy Raspberry Pi, but
+  SPOILERS: It became useful for my load balancing project (lols)
+
+h2 PiHole was not my thing back then
+p.
+  At first, i don't understand on setting it all up, since i don't study networking stuff,
+  except the Wifi routers (came from the manual & YOUTUBE too :kekw:), so i followed their
+  guide very carefully, but i didn't set the DNS address in my router because i was already
+  convinced that it might not work, plus the router was for everything so i cannot disturb
+  them while they are doing online classes or work.
+p.
+  So, the setup was done, and it works, but i wanted to know about the filter lists
+img(src="#{rootPath}/assets/img/filterlists.png", alt="")
+p.
+  Filter lists are like the library, but the books are about lists of websites, domains,
+  hostnames, etc., with the return value like 0.0.0.0 which is NODATA
+  (no data will be received, so no ads :wink:) according to their documentation
+p.
+  These lists might not work on yours, but it really depends on what kind of content
+  you wanted to block (e.g: Porn, Gambling, Online Games, Social Media, etc.)
+
+h2 Found the biggest problem
+p.
+  DNS Resolvers literally resolves the domains that you are browsing.
+  If i go to #[code facebook.com], the resolver will just gave you an IP address depending on your location.
+  So if i wanted to block some content or ads popping up at YouTube, it will definetely not work.
+img(src="#{rootPath}/assets/img/how-dns-works.jpg", alt="Best Photoshop ever")
+
+h3 DNS Settings on various mobile devices
+p.
+  Another limitations of ad-block is on mobile devices. Android and iOS both have different approach of
+  network security. On iOS, you have to either generate an profile then install on each devices that runs with that system, 
+  or install an app with dedicated VPN, such as #[a(href='https://go.blokada.org/appstore' target='_blank') Blokada].
+p.
+  Meanwhile on Android, well...
+  For older ones, you have to install an app with dedicated VPN,
+  such as #[a(href='https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen&hl=en&gl=US' target='_blank') Nebulo]
+  or #[a(href='https://go.blokada.org/play' target='_blank') Blokada].
+  For newer ones specifically for Android 9 and up, 
+  #[a(href='https://www.androidpolice.com/2020/03/26/make-android-use-dns-server-choice/' target='_blank')] Private DNS option is available, 
+  and many ad-blocker DNS already offers you to use them.
+
+h2 Choosing the right DNS resolver
+p.
+  Now you have DNS resolver client, then asking to your ancestors that, which DNS resolver should i use?
+
+h3 Cloudflare
+p.
+  Cloudflare is the fastest & the most secure one but there is no adblocking
+p.
+  It has different variants depending what you want.
+  Learn more #[a(href='https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/' target='_blank') here].
+
+h3 OpenDNS
+p.
+  This is the bottom entry of my list, except if you are outside Asia. 
+  Just like Cloudflare, there is no adblocking and you can also secure your internet against malicious sites.
+p.
+  Learn more #[a(href='https://use.opendns.com/' target='_blank') here].
+
+h3 NextDNS
+p.
+  NextDNS took a different approach, by customizing your own DNS resolver, including adblocking! 
+  I am currently using this one because it's cheap and it's features such as: 
+ul
+  li AI-powered security 
+  li Parental Controls 
+  li DNS Caching 
+  li AdBlocking customization such as choosing filter lists available
+  li Multiple Profiles
+  li Available on almost all devices, except Brick Phones (go try it)
+  li You can try it right now, before signing up!
+p.
+  Learn more about #[a(href='https://nextdns.io/?from=ntf86sfc' target='_blank') NextDNS here].
+
+h3 BraveDNS
+p.
+  Coming soon
+
+h3 AdGuard / AdGuard Home
+p.
+  Coming soon
+
+h2 Zoomer reacts to DNS-over-TLS & DNS-over-HTTPS for the first time
+p.
+  Coming soon
+
+h2 Bought the Raspberry Pi Zero
+p.
+  Coming soon
+
+h2 Setting up my own DNS Server in this "smol" hardware
+p.
+  Coming soon
+
+h2 How about load balancing between VPS and my Home server
+p.
+  Coming soon
+
+h2 Hardware alternatives
+p.
+  Coming soon
+
+h2 Have you tried YouTube adblocking on a browser?
+p.
+  Yes i have. I know it will works because, unline DNS poisoning/adblocking, we can skip the ads anytime you want due to the 
+  adblocking extensions that can manipulate any elements inside the pages including YouTube, Spotify, even porn can be more enjoyful!
+
+h2 Conclusion
+p.
+  Adblocking was still like in a cat & mouse chase situation, and YouTube was really aggressive on their system.
+  Other than that, we can enjoy ad-free, smooth browsing experience with these adblocking solutions. But if you are developing apps 
+  that involves the internet, you might consider that don't forget to disable adblocking or add your domain to the whitelist of your choice!
+
