@@ -26,8 +26,8 @@ html(lang='en')
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
       integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer")
-    link(rel="stylesheet" href="#{rootPath}/assets/scss/bulma-prefers-dark.css")
-    link(rel="stylesheet" href="#{rootPath}/assets/scss/main.css")
+    link(rel="stylesheet" href="#{rootPath}/assets/css/bulma-prefers-dark.css")
+    link(rel="stylesheet" href="#{rootPath}/assets/css/main.css")
     link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
       integrity="sha256-UDtbUHqpVVfXmdJcQVU/bfDEr9xldf3Dbd0ShD0Uf/Y=" crossorigin="anonymous")
     link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-prefers-dark@0.1.0-beta.1/css/bulma-prefers-dark.css"
@@ -74,9 +74,9 @@ html(lang='en')
                         - count++
                         li
                           a(href="#{ rootPath }/article/#{ slug }") #{ article.content_title }
-                          p.
-                            Published #{ article.content_date }, #{ article.content_time }
-                            (#{ time_format })
+                          //- p.
+                          //-   Published #{ article.content_date }, #{ article.content_time }
+                          //-   (#{ time_format })
                       else
                         if !seeMore
                           - seeMore = true
@@ -91,12 +91,12 @@ html(lang='en')
     //- footer
     footer.footer
       .container
-        p Copyright #{year}
+        p Copyright&nbsp;
+          span(id="year") 2021
         p Version #{version}
-    //- script(type='text/javascript' src="#{rootPath}/assets/js/bulma.js") // Conflict with JQuery
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
       integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
       crossorigin='anonymous')
-    script(type='text/javascript' src="#{rootPath}/assets/js/main.js")
+    script(type='module' src="#{rootPath}/assets/js/index.js")
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-53297367-3")
 
