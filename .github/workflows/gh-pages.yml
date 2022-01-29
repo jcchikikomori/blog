@@ -24,7 +24,7 @@ jobs:
       - name: Install 🔧
         run: |
           npm install -g pnpm
-          pnpm install -g harp json node-sass coffeescript
+          pnpm install -g harp json node-sass coffeescript webpack webpack-cli
           pnpm install
           cd ~/work/blog/blog/
       - name: Set rootPath to _harp.json 🔧
