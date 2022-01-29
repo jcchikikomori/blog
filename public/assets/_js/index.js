@@ -1,5 +1,5 @@
-// Moment
-const moment = require("moment")
+// DayJS
+const dayjs = require("dayjs")
 
 // Google Analytics
 window.dataLayer = window.dataLayer || []
@@ -17,4 +17,6 @@ $(document).ready(function() {
   })
 
   $(".loading").fadeOut()
+
+  $("#year").text(dayjs().format("YYYY"))
 })
