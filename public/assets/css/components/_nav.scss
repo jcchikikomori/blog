@@ -45,6 +45,11 @@
   }
   
   .navbar-menu {
+    // above $desktop
+    @include desktop {
+      margin-right: 0 !important;
+    }
+
     // below $tablet
     @include mobile {
       &.is-active {
