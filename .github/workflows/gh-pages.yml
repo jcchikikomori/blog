@@ -38,8 +38,8 @@ jobs:
           ls -lah docs
       - name: Compile SCSS manually
         run: |
-          node-sass --omit-source-map-url public/assets/css/main.scss docs/assets/css/main.css
-          ls -al docs/assets
+          pnpm run buildcss
+          ls -lah docs/assets/css
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
