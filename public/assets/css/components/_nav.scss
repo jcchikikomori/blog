@@ -1,46 +1,86 @@
 .navbar {
-  @media (prefers-color-scheme: dark) {
-    // background-color: $theme-color-dark-0;
-
-    // .navbar-item {
-    //   color: $theme-color-dark-8 !important;
-    // }
+  // above $desktop
+  @include desktop {
+    min-height: 4rem;
   }
-}
 
-.navbar-brand {
-  .navbar-item {
-    display: block;
-    width: 100px;
+  // @media (prefers-color-scheme: dark) {}
 
-    .logo {
-      background-position: center;
-      background-size: cover;
-      height: 32px;
-      width: 100%;
-      width: -moz-available;
-      width: -webkit-fill-available;
-      width: fill-available;
-
-      @media (prefers-color-scheme: light) {
-        background-image: url('https://jcchikikomori.github.io/portfolio/img/jcc_logo.png');
+  .navbar-brand {
+    .navbar-item {
+      display: block;
+      // TODO: Remove this
+      width: 100px;
+  
+      .logo {
+        background-position: center;
+        background-size: cover;
+        height: 32px;
+        width: 100%;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: fill-available;
+  
+        @media (prefers-color-scheme: light) {
+          background-image: url('https://jcchikikomori.github.io/portfolio/img/jcc_logo.png');
+        }
+  
+        @media (prefers-color-scheme: dark) {
+          background-image: url('https://jcchikikomori.github.io/portfolio/img/jcc_logo_w.png');
+        }
       }
+    }
 
-      @media (prefers-color-scheme: dark) {
-        background-image: url('https://jcchikikomori.github.io/portfolio/img/jcc_logo_w.png');
+    // above $desktop
+    @include desktop {
+      .navbar-item {
+        display: block;
+        width: 8rem;
+    
+        .logo {
+          height: 100%;
+        }
       }
     }
   }
-}
-
-.navbar-menu {
-  .navbar-item {
-    padding: .5rem;
-
-    &:hover, &:focus {
-      @media (prefers-color-scheme: dark) {
-        background-color: $theme-color-dark-1;
-        color: $theme-color-dark-8;
+  
+  .navbar-menu {
+    // below $tablet
+    @include mobile {
+      &.is-active {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  
+    .navbar-item {
+      padding: .5rem;
+  
+      &:hover, &:focus {
+        @media (prefers-color-scheme: dark) {
+          background-color: $theme-color-dark-1;
+          color: $theme-color-dark-8;
+        }
+      }
+  
+      &.custom-search-wrapper,
+      &.custom-search-wrapper .gsc-control-cse {
+        padding: 0;
+        // below $tablet
+        @include mobile {
+          padding: inherit;
+        }
+      }
+  
+      &.custom-search-wrapper {
+        .gsc-control-wrapper-cse {
+          width: 20rem;
+  
+          @include mobile {
+            width: auto;
+            padding: 0 1rem;
+          }
+        }
       }
     }
   }

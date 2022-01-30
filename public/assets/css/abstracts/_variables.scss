@@ -29,6 +29,13 @@ $theme-color-dark-6: #dee2e6;
 $theme-color-dark-7: #e9ecef;
 $theme-color-dark-8: #f8f9fa;
 
+// https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
 @media (prefers-color-scheme: dark) {
   $text: $theme-color-dark-8;
   $background: $theme-color-dark-0;

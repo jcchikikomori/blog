@@ -12,5 +12,7 @@ nav.navbar(role='navigation' aria-label='main navigation')
       .navbar-start
         a.navbar-item(href="#{rootPath}/") Home
         a.navbar-item(href="#{rootPath}/articles") Articles
-      .navbar-end
         a.navbar-item(href="#{rootPath}/about") About
+      .navbar-end
+        a.navbar-item.custom-search-wrapper
+          div.gcse-search(enableAutoComplete="true")

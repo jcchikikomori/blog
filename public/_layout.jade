@@ -53,6 +53,9 @@ html(lang='en')
                       p #{description}
                     != yield
             .column.is-one-quarter.is-mobile
+              //- section.section
+              //-   .content.has-text-left
+              //-     .gcse-search
               section.section
                 .content.has-text-left
                   //- p.bd-notification.is-danger Auto
@@ -88,4 +91,5 @@ html(lang='en')
         p Version #{version}
     script(type='module' src="#{rootPath}/assets/js/index.js")
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-53297367-3")
+    script(async src="https://cse.google.com/cse.js?cx=8eecca0172cbfc116")
 
