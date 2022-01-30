@@ -1,37 +1,14 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width,initial-scale=1')
-    title= title
-    meta(name='description' content='#{ description }')
-    meta(name='keywords' content='blog, web, mobile-friendly, static-page, html5, github-pages')
-    meta(name='author' content='#{ author }')
-    //- meta(property='og:title' content='JCC Blog')
-    meta(property='og:image' content='https://jcchikikomori.github.io/portfolio/img/jcc_logo.jpg')
-    meta(property='og:url' content='https://jcchikikomori.github.io/blog')
-    meta(property='og:site_name' content='#{ title }')
-    meta(property='og:description' content='#{ description }')
-    //- meta(name='twitter:title' content="JCC Blog")
-    meta(name='twitter:image' content='https://jcchikikomori.github.io/portfolio/img/jcc_logo.jpg')
-    meta(name='twitter:url' content='https://jcchikikomori.github.io/blog')
-    meta(name='twitter:card' content='blog')
-    //- TODO: Migrate to jsdelivr.com
-    //if lt IE 9
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
-        integrity='sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==' crossorigin='anonymous')
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
-        integrity='sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==' crossorigin='anonymous')
-    link(rel="stylesheet" href="#{rootPath}/assets/css/main.css")
+  != partial("_shared/header")
   body
     .loading
     //- navigation
     != partial("_shared/nav")
     //- container
     .container.is-fullhd
-      //- jumbotron (TODO: Not yet done though)
-      != partial("_shared/maintenance")
+      //- jumbotron
+      //- != partial("_shared/maintenance")
     //- container
     .container.primary
       .columns.m-0
@@ -84,12 +61,5 @@ html(lang='en')
                   //- ol(type='1')
                   //-   li Coming Soon
     //- footer
-    footer.footer
-      .container
-        p Copyright&nbsp;
-          span(id="year") 2021
-        p Version #{version}
-    script(type='module' src="#{rootPath}/assets/js/index.js")
-    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-53297367-3")
-    script(async src="https://cse.google.com/cse.js?cx=8eecca0172cbfc116")
+    != partial("_shared/footer")
 
