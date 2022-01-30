@@ -18,6 +18,8 @@ $text: #000;
 $background: $theme-color-0;
 
 // Dark
+// Based from bulma-prefers-dark
+$body-background-dark: #17181c;
 // https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 $theme-color-dark-0: #212529;
 $theme-color-dark-1: #343a40;
@@ -38,5 +40,5 @@ $breakpoints: (
 
 @media (prefers-color-scheme: dark) {
   $text: $theme-color-dark-8;
-  $background: $theme-color-dark-0;
+  $background: $body-background-dark;
 }
