@@ -11,13 +11,13 @@ module.exports = {
     index: './public/assets/_js/index.js'
   },
   resolve: {
+    alias: {
+      'node_modules': path.join(__dirname, 'node_modules'),
+    },
     extensions: ['', '.js', '.jsx']
   },
   output: {
     path: __dirname,
     filename: './public/assets/js/[name].js'
-  },
-  externals: {
-    "jquery": "$"
   }
 }
