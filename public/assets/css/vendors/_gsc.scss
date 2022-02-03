@@ -1,0 +1,75 @@
+.navbar {  
+  .navbar-menu {
+    .navbar-item {
+      &.custom-search-wrapper,
+      &.custom-search-wrapper .gsc-control-cse,
+      .gsc-control-cse, .gsc-control-wrapper-cse {
+        @media (prefers-color-scheme: dark) {
+          background-color: $body-background-dark;
+          border-color: $body-background-dark;
+        }
+      }
+  
+      &.custom-search-wrapper {
+        &:hover, &:focus {
+          @media (prefers-color-scheme: dark) {
+            background-color: unset;
+            color: unset;
+          }
+        }
+        .gsc-control-cse {
+          @media (prefers-color-scheme: dark) {
+            border: none;
+          }
+        }
+        .gsc-control-wrapper-cse {
+          @media (prefers-color-scheme: dark) {
+            .gsc-search-box.gsc-search-box-tools {
+              background-color: $body-background-dark;
+            }
+            input.gsc-input,
+            .gsc-input-box,
+            .gsc-input-box-hover,
+            .gsc-input-box-focus {
+              border-color: $body-background-dark;
+              background-color: $theme-color-dark-1;
+              color: white;
+            }
+
+            // Search Results
+            .gsc-results-wrapper-overlay,
+            .gsc-resultsbox-visible,
+            .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult,
+            .gsc-above-wrapper-area {
+              background-color: $theme-color-dark-0;
+              border: none;
+            }
+            .gsc-modal-background-image-visible {
+              background-color: $body-background-dark;
+            }
+            // Search Result text colors
+            .gs-title,
+            .gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet, .gs-fileFormatType {
+              color: white !important;
+            }
+            .gsc-thumbnail-inside .gs-title {
+              .gs-title {
+                display: block;
+                float: left;
+              }
+            }
+            .gs-web-image-box, .gs-promotion-image-box {
+              margin-right: 1rem;
+            }
+            .gsc-input-box {
+              border-radius: 5rem;
+              @include mobile {
+                border-radius: .9rem 0 0 .9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
