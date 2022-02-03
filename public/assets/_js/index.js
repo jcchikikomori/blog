@@ -1,6 +1,9 @@
 // BulmaJS
 require("bulmajs")
 
+// LazyYouTube
+require("@justinribeiro/lite-youtube")
+
 // DayJS
 const dayjs = require("dayjs")
 
