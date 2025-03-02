@@ -32,10 +32,10 @@ jobs:
       - name: Build 🔧
         continue-on-error: false
         run: |
-          npm run prod
-          npm run build
+          npm run build-assets
+          npm run build-pages
           ls -lah docs
-      - name: Compile SCSS manually 🔧
+      - name: Verify CSS 🔧
         run: |
-          npm run css
+          # npm run build-css
           ls -lah docs/assets/css

@@ -12,20 +12,14 @@ with preprocessing, thanks to HarpJS, Jade template engine & NodeJS
 
 ### Requirements
 
-- NodeJS 16 and higher
+- NodeJS 18 and higher
 
-## Dev Environment
+## Serve
 
-You can try developing on contained environment
+Run both of these commands below:
 
-### Requirements
-
-- Docker
-- Visual Studio Code
-
-## Testing
-
-Run `npm run test` in ROOT directory (not in `public/`)
+* Run `npm run serve-assets` to serve assets.
+* Run `npm run serve-pages` to serve the webpage.
 
 ## Compile build
 
