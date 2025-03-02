@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install 🔧
         run: |
-          npm install -g harp json node-sass coffeescript webpack webpack-cli
+          npm install -g harp json sass coffeescript webpack webpack-cli@latest
           npm install
           cd ~/work/blog/blog/
       - name: Set rootPath to _harp.json 🔧
