@@ -7,9 +7,8 @@
   "scripts": {
     "dev": "webpack --progress --watch --mode=development",
     "prod": "webpack --progress --mode=production",
-    "build": "harp src docs",
-    "public": "harp public docs",
-    "test": "harp src",
+    "build": "harp public docs",
+    "test": "harp public",
     "css": "node-sass --omit-source-map-url --importer node_modules/node-sass-import public/assets/css/main.scss docs/assets/css/main.css"
   },
   "repository": {
