@@ -5,9 +5,10 @@
   "main": "index.jade",
   "private": true,
   "scripts": {
-    "build-assets": "webpack --progress --mode=production",
-    "build-pages": "harp public docs",
+    "build-assets": "npm run build-css && npm run build-webpack",
     "build-css": "sass --no-source-map -I node_modules/node-sass-import public/assets/css/main.scss docs/assets/css/main.css",
+    "build-pages": "harp public docs",
+    "build-webpack": "webpack --progress --mode=production",
     "serve-pages": "harp public",
     "serve-assets": "webpack --progress --watch --mode=development"
   },

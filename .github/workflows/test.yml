@@ -37,5 +37,4 @@ jobs:
           ls -lah docs
       - name: Verify CSS 🔧
         run: |
-          # npm run build-css
           ls -lah docs/assets/css
