@@ -1,3 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
 .navbar {
   // above $desktop
   @include desktop {

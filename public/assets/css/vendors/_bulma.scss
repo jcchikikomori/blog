@@ -1,2 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
 @import '../../../../node_modules/bulma/bulma';
 @import '../../../../node_modules/bulma-prefers-dark/bulma-prefers-dark';

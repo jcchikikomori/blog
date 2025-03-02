@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 16.x]
+        node-version: [18.x]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
@@ -23,9 +23,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install 🔧
         run: |
-          npm install -g pnpm
-          pnpm install -g harp json node-sass coffeescript webpack webpack-cli
-          pnpm install
+          npm install -g harp json sass coffeescript webpack webpack-cli@latest
+          npm install
           cd ~/work/blog/blog/
       - name: Set rootPath to _harp.json 🔧
         run: |
@@ -33,10 +32,9 @@ jobs:
       - name: Build 🔧
         continue-on-error: false
         run: |
-          pnpm run prodjs
-          pnpm run build
+          npm run build-assets
+          npm run build-pages
           ls -lah docs
-      - name: Compile SCSS manually 🔧
+      - name: Verify CSS 🔧
         run: |
-          pnpm run buildcss
           ls -lah docs/assets/css
