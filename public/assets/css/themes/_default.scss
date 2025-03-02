@@ -3,6 +3,10 @@
 // default one.
 // -----------------------------------------------------------------------------
 
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
 html {
   body {
     font-family: 'Helvetica';

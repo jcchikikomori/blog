@@ -1,22 +1,38 @@
 @charset 'UTF-8';
 
-// 1. Configuration and helpers
-@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
+// Refactoring usage
+// - https://sass-lang.com/documentation/at-rules/use/#differences-from-import
+// - https://stackoverflow.com/a/74117234
 
-// 2. Vendors
-@import 'vendors/bulma', 'vendors/gsc';
+// Configuration and helpers
+// @import 'abstracts/variables';
+// @import 'abstracts/functions';
+// @import 'abstracts/mixins';
 
-// 3. Base stuff
-@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
+// Vendors
+@import 'vendors/bulma';
+@import 'vendors/gsc';
 
-// 4. Layout-related sections
-@import 'layout/header', 'layout/footer';
+// Base stuff
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/helpers';
 
-// 5. Components
-@import 'components/modal', 'components/nav', 'components/button', 'components/loading';
+// Layout-related sections
+@import 'layout/header';
+@import 'layout/footer';
 
-// 6. Page-specific styles
-@import 'pages/articles', 'pages/home', 'pages/maintenance';
+// Components
+@import 'components/modal';
+@import 'components/nav';
+@import 'components/button';
+@import 'components/loading';
 
-// 7. Themes
+// Page-specific styles
+@import 'pages/articles';
+@import 'pages/home';
+@import 'pages/maintenance';
+
+// Themes
 @import 'themes/default';
