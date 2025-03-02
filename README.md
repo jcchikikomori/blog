@@ -32,3 +32,11 @@ Run `harp src` in ROOT directory (not in `public/`)
 ## Compile build
 
 Run `harp src docs` in ROOT directory
+
+## License
+
+Both licensed with [MIT](./LICENSE) for software/web assets, and [cc-by-4.0](./CONTENT_LICENSE) for content.
+
+## Disclaimer
+
+Please refer to this [document](./DISCLAIMER.md).
