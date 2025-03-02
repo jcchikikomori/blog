@@ -37,7 +37,7 @@ jobs:
           ls -lah docs
       - name: Compile SCSS manually
         run: |
-          npm run buildcss
+          npm run css
           ls -lah docs/assets/css
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
