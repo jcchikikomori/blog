@@ -12,9 +12,7 @@ with preprocessing, thanks to HarpJS, Jade template engine & NodeJS
 
 ### Requirements
 
-- NodeJS 12
-- `pnpm` package
-- `harp` package (install globally - `pnpm install -g harp`)
+- NodeJS 16 and higher
 
 ## Dev Environment
 
@@ -27,11 +25,11 @@ You can try developing on contained environment
 
 ## Testing
 
-Run `harp src` in ROOT directory (not in `public/`)
+Run `npm run test` in ROOT directory (not in `public/`)
 
 ## Compile build
 
-Run `harp src docs` in ROOT directory
+Run `npm run build` in ROOT directory
 
 ## License
 

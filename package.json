@@ -5,10 +5,12 @@
   "main": "index.jade",
   "private": true,
   "scripts": {
-    "devjs": "webpack --progress --watch --mode=development",
-    "prodjs": "webpack --progress --mode=production",
-    "build": "harp public docs",
-    "buildcss": "node-sass --omit-source-map-url --importer node_modules/node-sass-import public/assets/css/main.scss docs/assets/css/main.css"
+    "dev": "webpack --progress --watch --mode=development",
+    "prod": "webpack --progress --mode=production",
+    "build": "harp src docs",
+    "public": "harp public docs",
+    "test": "harp src",
+    "css": "node-sass --omit-source-map-url --importer node_modules/node-sass-import public/assets/css/main.scss docs/assets/css/main.css"
   },
   "repository": {
     "type": "git",
